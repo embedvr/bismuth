@@ -1,0 +1,12 @@
+# This is the configuration for the internal web server.
+address: 0.0.0.0
+port: 8001
+
+# Do not give out your secret key to anyone!
+# It will give them the ability to add/remove whitelisted players.
+secretKey: CHANGEME
+
+# Set this to the external web API for your server.
+# This is the front-facing website that is used to identify subscribers
+# and to make requests to Bismuth.
+externalAPI: http://localhost:5173/api

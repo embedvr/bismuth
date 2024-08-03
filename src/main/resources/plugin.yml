@@ -1,0 +1,13 @@
+name: Bismuth
+version: '1.0-SNAPSHOT'
+main: lol.addi.bismuth.Bismuth
+api-version: '1.21'
+commands:
+  identify:
+    description: Get the Twitch handle of a player.
+    usage: /identify
+    permission: bismuth.identify
+permissions:
+  bismuth.identify:
+    description: Gives access to the /identify command.
+    default: op
