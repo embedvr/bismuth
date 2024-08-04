@@ -31,9 +31,11 @@ public class Identify implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (!sender.isOp() || !sender.hasPermission("bismuth.identify")) {
-            sender.sendMessage("§cYou don't have permission to use this command.");
-            return true;
+        if (!sender.hasPermission("bismuth.identify")) {
+            if(!sender.isOp()) {
+                sender.sendMessage("§cYou don't have permission to use this command.");
+                return true;
+            }
         }
 
         String playerName = args[0];
